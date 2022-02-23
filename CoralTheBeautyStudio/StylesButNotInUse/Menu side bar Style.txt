@@ -1,0 +1,79 @@
+.main_menu nav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: #ffffff;
+  left: 8px;
+  top: 50%;
+  transform: translatey(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.main_menu nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: #ffffff;
+  right: 8px;
+  top: 50%;
+  transform: translatey(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.main_menu nav > ul > li ul.sub_menu {
+  position: absolute;
+  min-width: 200px;
+  padding: 20px 20px 24px;
+  background: #fff;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transform: perspective(600px) rotateX(-90deg);
+  transform: perspective(600px) rotateX(-90deg);
+  -webkit-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 99;
+  top: 100%;
+  text-align: left;
+}
+.main_menu nav > ul > li ul.sub_menu li a {
+  font-weight: 400;
+  display: block;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.main_menu nav > ul > li ul.sub_menu li a:hover {
+  color: #83b53b;
+}
+.main_menu nav > ul > li .mega_menu {
+  position: absolute;
+  min-width: 100%;
+  padding: 25px 30px 30px;
+  background: #fff;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transform: perspective(600px) rotateX(-90deg);
+  transform: perspective(600px) rotateX(-90deg);
+  -webkit-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 99;
+  top: 100%;
+  text-align: left;
+  width: 600px;
+}
